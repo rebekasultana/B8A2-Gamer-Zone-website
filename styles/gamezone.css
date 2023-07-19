@@ -142,13 +142,15 @@ footer{
 .footer-title{
     color: #FFFFFF;
 }
-ul{
-    color: white;
+ .list-item li{
+    color: black;
     display: flex;
     list-style: none;
     gap: 30px;
     justify-content: center;
+    text-align: center;
 }
+
 .footer-header{
     display: flex;
     align-items: center;
@@ -183,12 +185,19 @@ ul{
 
 @media screen and (max-width: 576px) {
     
-    .header-start, .header-first, 
+     .header-first, 
     .banner-content
     {
         flex-direction: column;
     }
     .instant{
         flex-direction: column-reverse;
+    }
+    .list-item li{
+    flex-direction: column;
+         
+    }
+    .header-start{
+        flex-direction: row;
     }
 }
