@@ -65,6 +65,7 @@ nav > h3 img{
 .banner-content{
     display: flex;
     justify-content: space-around;
+    background-image: url('../images/Group\ 14.png');
     
     
 }
@@ -81,6 +82,11 @@ nav > h3 img{
     border-radius: 16px;
     gap: 24px;
     margin: 30px;
+}
+.image:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    background: #FFF;
 }
 
 .third-imgage:hover{
@@ -100,7 +106,14 @@ nav > h3 img{
     height: 500px;
 }
 
-
+.overflow{
+    position: relative;
+    width: 50px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
 
 .logo-add {
     display: flex;
@@ -110,6 +123,8 @@ nav > h3 img{
 }
 .img-primary{
   display: flex;  
+  text-align: center;
+ justify-items: center;
 }
 
 
@@ -148,6 +163,22 @@ ul{
     padding-right: 30px;
 }
 
+.serial-image{
+    display: grid;
+    gap: 3;
+    grid-template-columns: repeat(5,1fr);
+}
+.image-overlay{
+    background-image: url('../images/Rectangle\ 55.png');
+    position: relative;
+    height: 700px;
+    width: 700px;
+}
+.image-overflow{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
 
 @media screen and (max-width: 576px) {
     
