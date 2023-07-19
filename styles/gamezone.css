@@ -15,7 +15,9 @@
 }
 .header-start{
     display: flex;
-    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
    
 }
 .icon{
@@ -35,7 +37,6 @@
     
 }
 .list-item{
-    text-decoration: none;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -70,7 +71,7 @@ nav > h3 img{
 .first-section-heading{
     text-align: center;
 }
-.funny-video{
+.common{
     color: #FF42A5;
 }
 .image{
@@ -89,14 +90,35 @@ nav > h3 img{
 
 .instant{
     display: flex;
+    border-radius: 8px;
+    margin-top: 300px;
+    justify-content: space-around;
+
 }
+.instant-img{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+.logo-add {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    justify-content: center;
+}
+.img-primary{
+  display: flex;  
+}
+
 
 
 footer{
     background-color: #000000;
 }
 .first-foot{
-    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -109,14 +131,32 @@ ul{
     display: flex;
     list-style: none;
     gap: 30px;
+    justify-content: center;
+}
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-last, .footer-finish{
+    font-size: 10px;
+    color: #FFFFFF;
+}
+.icon-added{
+    gap: 30px;
+    padding-right: 30px;
 }
 
 
 @media screen and (max-width: 576px) {
-    header{
-     padding: 20px;
-    }
-    .header-start{
+    
+    .header-start, .header-first, 
+    .banner-content
+    {
         flex-direction: column;
+    }
+    .instant{
+        flex-direction: column-reverse;
     }
 }
