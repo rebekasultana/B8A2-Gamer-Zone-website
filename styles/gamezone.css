@@ -36,11 +36,12 @@
    
     
 }
-.list-item{
+.list-item li{
     display: flex;
     justify-content: space-between;
     list-style: none;
     gap: 24px;
+    color: black;
 }
 .banner-title{
     font-size: 95px;
