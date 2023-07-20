@@ -31,18 +31,32 @@
     display: flex;
 
 }
+
+
 .fun{
-    color: #FF42A5;
-   
-    
+    color: #FF42A5;   
 }
-.list-item li{
+.list-item{
     display: flex;
+    text-align: center;
     justify-content: space-between;
     list-style: none;
     gap: 24px;
     color: black;
 }
+/* we are gamer section style */
+.gamer{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+   
+}
+.play-game{
+    color: #FF42A5;
+}
+
+/* banner style section */
 .banner-title{
     font-size: 95px;
     font-weight: 800;
@@ -138,26 +152,37 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    color: white;
+    
 }
 .footer-title{
     color: #FFFFFF;
 }
- .list-item li{
-    color: black;
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    justify-content: center;
-    text-align: center;
-}
-
+ 
 .footer-header{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.footer-last, .footer-finish{
+.footer-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+.footer-last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #FFFFFF;
+    list-style: none;
+    gap: 20px;
+}
+
+.footer-finish{
     font-size: 10px;
     color: #FFFFFF;
 }
@@ -185,19 +210,32 @@ footer{
 
 @media screen and (max-width: 576px) {
     
-     .header-first, 
-    .banner-content
+     .header-first
+    
     {
         flex-direction: column;
     }
     .instant{
         flex-direction: column-reverse;
     }
-    .list-item li{
+    .list-item {
     flex-direction: column;
          
     }
     .header-start{
         flex-direction: row;
     }
+    .banner-content{
+        flex-direction: column-reverse;
+    }
+    .online-game{
+        flex-direction: none;
+        
+    }
+    .image{
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
 }
