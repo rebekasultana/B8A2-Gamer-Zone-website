@@ -81,11 +81,16 @@ nav > h3 img{
     display: flex;
     justify-content: space-around;
     background-image: url('../images/Group\ 14.png');
-    
-    
 }
+
+/* online game section */
 .first-section-heading{
     text-align: center;
+}
+.online-game img{
+      width: 200px;
+      height: 200px;
+      
 }
 .common{
     color: #FF42A5;
@@ -101,51 +106,81 @@ nav > h3 img{
 .image:hover{
     cursor: pointer;
     border-radius: 50px;
-    background: #FFF;
+    background: black;
+}
+.extra-icon{
+    display: none; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+    background-color: red;
+}
+.extra-icon img{
+    height: 25px !important;
+    width: 25px !important;
 }
 
-.third-imgage:hover{
-   background-color:  #000000;
+.third-image-wraper:hover .extra-icon{
+    display: block;
+    
+
+}
+
+.third-image-wraper:hover{
+   
+    
+
+}
+.wraper{
+    position: relative;
+}
+
+.third-image:hover{
+   background-color:  #000000; 
    cursor: pointer;
 }
 
+/* instant section */
 .instant{
     display: flex;
     border-radius: 8px;
     margin-top: 300px;
     justify-content: space-around;
+    margin-bottom: 300px;
 
 }
-.instant-img{
-    width: 500px;
-    height: 500px;
-}
-
-.overflow{
-    position: relative;
-    width: 50px;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
-
-.logo-add {
+.image-overlay{
     display: flex;
-    text-align: center;
-    gap: 30px;
-    justify-content: center;
+    position: relative;
 }
+.image-containt{
+position: absolute;
+left: -100px;
+bottom: -100px;
+}
+
+
+/* serial ninth image style */
 .img-primary{
   display: flex;  
   text-align: center;
  justify-items: center;
+ margin-bottom: 100px;
+}
+.img-primary:hover{
+    border-radius: 50px;
+    background: #FFF;
+    cursor: pointer;
+    color: red;
+    border: 1px solid black;
 }
 
 
-
+/* footer style */
 footer{
     background-color: #000000;
+
 }
 .first-foot{
     text-align: center;
@@ -191,26 +226,21 @@ footer{
     padding-right: 30px;
 }
 
+/* hover section style */
 .serial-image{
     display: grid;
     gap: 3;
     grid-template-columns: repeat(5,1fr);
 }
-.image-overlay{
-    background-image: url('../images/Rectangle\ 55.png');
-    position: relative;
-    height: 700px;
-    width: 700px;
-}
-.image-overflow{
-    width: 250px;
-    height: 250px;
-    position: absolute;
-}
 
+/* mobile device responsive */
 @media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+       }
     
-     .header-first
+    
+     .header-first, .gamer
     
     {
         flex-direction: column;
@@ -222,20 +252,40 @@ footer{
     flex-direction: column;
          
     }
-    .header-start{
+    .header-start, .footer-header{
         flex-direction: row;
     }
     .banner-content{
         flex-direction: column-reverse;
     }
-    .online-game{
-        flex-direction: none;
-        
-    }
+    
+    
     .image{
         flex-direction: column;
         margin-top: 100px;
         margin-bottom: 100px;
     }
+    .footer-bar{
+        display: grid;
+        gap: 2;
+        grid-template-columns: repeat(3 1fr);
+    }
     
 }
+
+/* tablet responsive */
+@media screen  and (min-width:576px) and (max-width: 960px){
+    header{
+        padding: 20px;
+       }
+    
+       .header-first, .gamer,
+       .online-game
+       {
+           flex-direction: column;
+       }
+       .banner-content{
+        flex-direction: column-reverse;
+    }
+    
+}      
